@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import '@mantine/core/styles.css';
+import '@gfazioli/mantine-text-animate/styles.css';
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import { CustomMantineProvider } from "@/providers/mantine/mantineProviders";
+import { AppShellLayout } from "@/components/AppShellLayout/AppShellLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,7 +39,9 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <CustomMantineProvider>
-          {children}
+          <AppShellLayout>
+            {children}
+          </AppShellLayout>
         </CustomMantineProvider>
       </body>
     </html>
