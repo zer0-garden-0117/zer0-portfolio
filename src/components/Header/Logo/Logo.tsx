@@ -1,4 +1,4 @@
-import { Box, Text } from '@mantine/core';
+import { Box } from '@mantine/core';
 import { useRouter } from 'next/navigation';
 import { TextAnimate } from '@gfazioli/mantine-text-animate';
 

@@ -1,6 +1,6 @@
 import { ProfileCard } from "@/components/Contents/ProfileCard/ProfileCard";
 import { WorkList } from "@/components/Contents/WorkList/WorkList";
-import { SimpleGrid, Space, Title } from "@mantine/core";
+import { SimpleGrid, Title } from "@mantine/core";
 
 export default function Home() {
   return (
