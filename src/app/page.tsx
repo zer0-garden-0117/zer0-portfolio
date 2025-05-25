@@ -2,6 +2,25 @@ import { ProfileCard } from "@/components/Contents/ProfileCard/ProfileCard";
 import { WorkList } from "@/components/Contents/WorkList/WorkList";
 import { SimpleGrid, Title } from "@mantine/core";
 
+export async function generateMetadata() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
+  return {
+    title: `zer0 portfolio`,
+    description: `zer0 portfolio`,
+    openGraph: {
+      title: `zer0 portfolio`,
+      description: `zer0 portfolio`
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `zer0 portfolio`,
+      description: `zer0 portfolio`,
+      images: [`${baseUrl}/ogp.jpg`], 
+    }
+  };
+}
+
 export default function Home() {
   return (
     <>
