@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" {...mantineHtmlProps}>
+    <html lang="ja" {...mantineHtmlProps}>
       <head>
         <meta charSet="UTF-8" />
         <meta
