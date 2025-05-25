@@ -25,7 +25,7 @@ export const Logo: React.FC<LogoProps> = () => {
     >
       <TextAnimate.TextTicker
         value="zer0 portfolio"
-        c="gray"
+        c="var(--mantine-color-dimmed)"
         speed={0.2}
         size="xl" 
         fw={700}
