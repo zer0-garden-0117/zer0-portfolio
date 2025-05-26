@@ -4,6 +4,7 @@ import '@gfazioli/mantine-text-animate/styles.css';
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import { CustomMantineProvider } from "@/providers/mantine/mantineProviders";
 import { AppShellLayout } from "@/components/AppShellLayout/AppShellLayout";
+import ClientGoogleAnalytics from "./googleAnalytics";
 
 export default function RootLayout({
   children,
@@ -26,6 +27,7 @@ export default function RootLayout({
             {children}
           </AppShellLayout>
         </CustomMantineProvider>
+        <ClientGoogleAnalytics />
       </body>
     </html>
   );
