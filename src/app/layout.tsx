@@ -1,21 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import '@mantine/core/styles.css';
 import '@gfazioli/mantine-text-animate/styles.css';
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
 import { CustomMantineProvider } from "@/providers/mantine/mantineProviders";
 import { AppShellLayout } from "@/components/AppShellLayout/AppShellLayout";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 
 export default function RootLayout({
   children,
@@ -32,7 +20,7 @@ export default function RootLayout({
         />
         <ColorSchemeScript />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <CustomMantineProvider>
           <AppShellLayout>
             {children}
