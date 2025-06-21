@@ -1,4 +1,4 @@
-import { IconAt, IconBrandX, IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
+import { IconBrandBluesky, IconBrandX, IconBrandGithub, IconExternalLink, IconMessage } from '@tabler/icons-react';
 import { Anchor, Avatar, Card, Center, Group, Text } from '@mantine/core';
 
 export function ProfileCard() {
@@ -17,10 +17,42 @@ export function ProfileCard() {
           </Text>
 
           <Group wrap="nowrap" gap={10} mt={3}>
-            <IconAt stroke={1.5} size={16} />
+            <IconMessage stroke={1.5} size={16} />
             <Text fz="xs" c="dimmed">
-              大阪府/日本
+              生成AIを使って画像を生成したり何かを開発したりします
             </Text>
+          </Group>
+
+
+          <Group wrap="nowrap" gap={10} mt={3}>
+            {/* <IconAt stroke={1.5} size={16} /> */}
+            <Text fz="xs" c="dimmed" ml={25}>
+              普段はインフラエンジニアのはしくれ
+            </Text>
+          </Group>
+
+          <Group wrap="nowrap" gap={10} mt={5}>
+            <IconBrandGithub stroke={1.5} size={16} />
+            <Anchor href="https://github.com/zer0-garden-0117" target="_blank">
+             <Group wrap="nowrap" gap={3} >
+              <Text fz="xs">
+                zer0-garden-0117
+              </Text>
+              <IconExternalLink stroke={1.5} size={12} />
+              </Group>
+            </Anchor>
+          </Group>
+
+          <Group wrap="nowrap" gap={10} mt={5}>
+            <IconBrandBluesky stroke={1.5} size={16} />
+            <Anchor href="https://bsky.app/profile/zer0aiart.bsky.social" target="_blank">
+             <Group wrap="nowrap" gap={3} >
+              <Text fz="xs">
+                @zer0aiart.bsky.social
+              </Text>
+              <IconExternalLink stroke={1.5} size={12} />
+              </Group>
+            </Anchor>
           </Group>
 
           <Group wrap="nowrap" gap={10} mt={5}>
@@ -35,17 +67,6 @@ export function ProfileCard() {
             </Anchor>
           </Group>
 
-          <Group wrap="nowrap" gap={10} mt={5}>
-            <IconBrandGithub stroke={1.5} size={16} />
-            <Anchor href="https://github.com/zer0-garden-0117" target="_blank">
-             <Group wrap="nowrap" gap={3} >
-              <Text fz="xs">
-                zer0-garden-0117
-              </Text>
-              <IconExternalLink stroke={1.5} size={12} />
-              </Group>
-            </Anchor>
-          </Group>
         </div>
       </Group>
       </Card>

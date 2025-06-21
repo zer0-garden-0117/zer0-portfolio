@@ -33,7 +33,7 @@ export function WorkList() {
       url: 'https://github.com/zer0-garden-0117/cross-media-uploader',
       domain: 'github.com',
       description: '複数のSNSに同時投稿するツール。',
-      techStack: '(構成：Shell Script + PyQt6)',
+      techStack: '(構成：Nextron + MantineUI + Shell)',
       githubUrl: 'https://github.com/zer0-garden-0117/cross-media-uploader',
     },
   ];
