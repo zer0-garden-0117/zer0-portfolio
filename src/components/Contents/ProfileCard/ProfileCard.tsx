@@ -1,4 +1,4 @@
-import { IconBrandBluesky, IconBrandX, IconBrandGithub, IconExternalLink, IconMessage } from '@tabler/icons-react';
+import { IconBrandBluesky, IconBrandX, IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import { Anchor, Avatar, Card, Center, Group, Text } from '@mantine/core';
 
 export function ProfileCard() {
@@ -16,18 +16,9 @@ export function ProfileCard() {
             zer0
           </Text>
 
-          <Group wrap="nowrap" gap={10} mt={3}>
-            <IconMessage stroke={1.5} size={16} />
+          <Group wrap="nowrap" gap={10}>
             <Text fz="xs" c="dimmed">
               生成AIを使って画像を生成したり何かを開発したりします
-            </Text>
-          </Group>
-
-
-          <Group wrap="nowrap" gap={10} mt={3}>
-            {/* <IconAt stroke={1.5} size={16} /> */}
-            <Text fz="xs" c="dimmed" ml={25}>
-              普段はインフラエンジニアのはしくれ
             </Text>
           </Group>
 
