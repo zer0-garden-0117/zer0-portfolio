@@ -18,7 +18,7 @@ export function ProfileCard() {
 
           <Group wrap="nowrap" gap={10}>
             <Text fz="xs" c="dimmed">
-              生成AIを使って画像を生成したり何かを開発したりします
+              生成AIを活用して画像を生成したり何かを開発したりします
             </Text>
           </Group>
 
